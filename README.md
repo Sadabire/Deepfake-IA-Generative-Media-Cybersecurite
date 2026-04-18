@@ -1,120 +1,111 @@
-# 🎬 Deepfake — IA Générative, Médias & Cybersécurité
+# Deepfake — IA Générative, Médias et Cybersécurité
 
-Ce projet est un travail de **recherche et d’analyse** portant sur la technologie des **deepfakes**, leur fonctionnement, leurs usages, leurs menaces, leurs impacts sociétaux ainsi que les mécanismes de détection et de prévention associés.
+Projet de recherche et d'analyse portant sur la technologie des deepfakes : leur fonctionnement, leurs usages, les menaces qu'ils représentent, leurs impacts sociétaux ainsi que les mécanismes de détection et de prévention associés.
 
-Le projet a été présenté à l’oral dans le cadre du module **PHR (Projet de Recherche)** à l’**IUT Clermont Auvergne**.
+Ce travail a été réalisé dans le cadre du module **PHR (Projet de Recherche)** à l'**IUT Clermont Auvergne — Université Clermont Auvergne**, et présenté à l'oral devant jury.
 
-Aucun outil logiciel spécifique n’a été utilisé : le travail repose principalement sur de la **veille scientifique, technologique et cyber**, ainsi que sur une **synthèse critique des connaissances existantes**.
-
----
-
-## 🎯 Objectifs du projet
-
-- Définir ce qu’est un **deepfake** et ses fondements technologiques  
-- Analyser les **technologies d’IA générative** impliquées (GAN, autoencodeurs, etc.)  
-- Identifier les **menaces liées aux deepfakes**  
-- Étudier les **impacts sociétaux, économiques et juridiques**  
-- Présenter les **méthodes de détection et de prévention**  
-- Discuter des **usages positifs** (technologie à double usage)  
-- Produire une **synthèse structurée** présentée à l’oral  
+Il repose sur une **veille scientifique, technologique et cyber** approfondie ainsi qu'une synthèse critique des connaissances existantes. Aucun développement logiciel n'a été produit dans ce cadre.
 
 ---
 
-## 🧠 Contenu scientifique & technologique
+## Contexte et objectifs
 
-### 🔍 Définition & mécanismes
+Les deepfakes illustrent de manière frappante à quel point l'intelligence artificielle générative peut transformer notre rapport aux médias — pour le meilleur comme pour le pire. Ce projet part de ce constat pour répondre à plusieurs questions concrètes :
 
-Les deepfakes reposent sur plusieurs modèles d’intelligence artificielle, notamment :
-
-- **GAN (Generative Adversarial Networks)**
-- Auto-encodeurs
-- CNN (vision par ordinateur)
-- RNN (audio et données séquentielles)
-- Synthèse vocale et clonage de voix
-
-### 🧩 Technologie à double usage (Dual-Use)
-
-Cette technologie présente deux facettes :
-
-- ✔ Usages créatifs, éducatifs ou artistiques  
-- ❌ Usages malveillants ou frauduleux  
+- Qu'est-ce qu'un deepfake, et comment fonctionne-t-il techniquement ?
+- Quels modèles d'IA sont impliqués dans leur création ?
+- Quelles menaces posent-ils réellement, et pour qui ?
+- Comment les détecter, et comment s'en prémunir ?
+- Existe-t-il des usages légitimes et bénéfiques de cette technologie ?
 
 ---
 
-## 🔐 Menaces & cybersécurité
+## Fondements technologiques
 
-Le projet met en évidence plusieurs risques majeurs :
+La création de deepfakes repose sur plusieurs familles de modèles d'apprentissage profond :
 
-- Désinformation et manipulation politique  
-- Fraude vocale (ex : *CEO fraud*)  
-- Extorsion et chantage  
-- Deepfakes non consentis  
-- Compromission de preuves numériques  
-- Perte de confiance dans les médias  
+**Réseaux Antagonistes Génératifs (GAN)** — au cœur de la plupart des systèmes de deepfake. Un générateur produit du contenu synthétique tandis qu'un discriminateur tente de le détecter. Les deux s'améliorent mutuellement par un processus adversarial, jusqu'à produire des contenus d'un réalisme difficile à distinguer du réel.
 
----
+**Auto-encodeurs** — utilisés principalement pour l'échange de visages. L'encodeur extrait une représentation compressée du visage source, que le décodeur reconstruit sur un autre visage cible en conservant les expressions et mouvements d'origine.
 
-## 🌍 Impacts étudiés
+**Réseaux convolutifs (CNN)** — pour l'analyse et la reproduction précise des traits du visage.
 
-- **Sociétaux**  
-  → confiance, perception de l’information, médias, démocratie  
+**Réseaux récurrents (RNN)** — pour assurer la cohérence temporelle des vidéos, notamment la synchronisation labiale.
 
-- **Économiques**  
-  → fraude, atteinte à la réputation, risques financiers  
-
-- **Juridiques**  
-  → droit à l’image, responsabilité, traçabilité des contenus  
+**NLP et synthèse vocale** — pour cloner la voix et le timbre d'un individu à partir d'un échantillon audio.
 
 ---
 
-## 🛡️ Détection & prévention
+## Menaces identifiées
 
-Plusieurs leviers de mitigation ont été étudiés :
+Le projet met en évidence plusieurs vecteurs de risque concrets :
 
-- Détection par IA (analyse visuelle et audio)  
-- Filigrane numérique  
-- Blockchain et traçabilité  
-- Authentification renforcée  
-- Régulation et cadre légal  
-- Sensibilisation du public  
-
----
-
-## 🎨 Usages positifs & opportunités
-
-Malgré les menaces, des usages bénéfiques existent :
-
-- Cinéma et doublage multilingue  
-- Arts et création numérique  
-- Éducation et formation  
-- Restauration historique  
-- Accessibilité et avatars IA  
+- **Désinformation et manipulation politique** — simulation de déclarations de personnalités publiques pour influencer l'opinion ou déstabiliser des institutions
+- **Fraude économique** — notamment la fraude au président (*CEO fraud*), où un deepfake audio imite la voix d'un dirigeant pour ordonner un virement frauduleux
+- **Usurpation d'identité et contournement biométrique** — exploitation des deepfakes pour tromper des systèmes d'authentification vocale ou faciale
+- **Atteintes aux individus** — création de contenus non consentis à caractère diffamatoire ou sexuel
+- **Compromission de la preuve numérique** — remise en question de l'authenticité de tout contenu audiovisuel, y compris dans un contexte judiciaire
 
 ---
 
-## 💬 Modalités du projet
+## Impacts analysés
 
-- **Type :** Projet de recherche  
-- **Support :** Rapport écrit et présentation orale  
-- **Outils utilisés :** Veille et documentation (aucun développement logiciel)  
-- **Travail réalisé en groupe**  
-- **Module :** PHR (Projet de Recherche)  
+**Sur le plan sociétal** — les deepfakes alimentent une crise de confiance dans les médias et l'information. Quand on ne peut plus faire confiance à ce qu'on voit ou entend, c'est le débat public lui-même qui s'érode.
 
----
+**Sur le plan économique** — les entreprises sont exposées à des risques financiers directs (fraude) mais aussi à des atteintes à leur réputation difficiles à réparer.
 
-## 🧠 Compétences développées
-
-- Veille technologique et scientifique  
-- Lecture critique de ressources académiques  
-- Culture en **IA** et **cybersécurité**  
-- Synthèse et vulgarisation technique  
-- Analyse d’impact sociétal  
-- Communication orale  
-- Travail collaboratif  
+**Sur le plan juridique** — le droit peine à suivre l'évolution de la technologie. Des questions fondamentales restent ouvertes : qui est propriétaire d'une image synthétisée ? Qui est responsable des dommages causés ? Comment établir l'authenticité d'une preuve numérique ?
 
 ---
 
-## 🔖 Mots-clés / Tags
+## Détection et prévention
 
-`Deepfake` `IA` `GAN` `Cybersecurity` `Dual-Use` `Media` `Ethics`  
-`Veille` `Recherche` `PHR` `Presentation`
+La lutte contre les deepfakes nécessite une approche combinée :
+
+- Détection automatique par IA — analyse des incohérences visuelles (clignements anormaux, artefacts) et audio (variations spectrales)
+- Filigrane numérique (*watermarking*) — intégration de marques invisibles pour prouver l'authenticité d'un contenu
+- Blockchain — pour enregistrer l'historique d'un média et garantir sa traçabilité
+- Authentification renforcée — MFA et vérifications dynamiques pour contrer l'usurpation biométrique
+- Sensibilisation — formation du public et des professionnels à adopter un regard critique face aux contenus audiovisuels
+
+---
+
+## Usages positifs
+
+Malgré les risques, la technologie deepfake présente des applications légitimes et bénéfiques :
+
+- **Cinéma et doublage multilingue** — synchronisation labiale réaliste dans des langues différentes
+- **Éducation et formation** — avatars interactifs pour des expériences d'apprentissage immersives
+- **Création artistique** — génération de contenus visuels et musicaux innovants
+- **Restauration historique** — amélioration de vieilles vidéos ou reconstitutions historiques animées
+
+---
+
+## Modalités du projet
+
+| Élément | Détail |
+|---|---|
+| Type | Projet de recherche académique |
+| Module | PHR — Projet de Recherche |
+| Établissement | IUT Clermont Auvergne — Université Clermont Auvergne |
+| Restitution | Rapport écrit + présentation orale |
+| Mode de travail | Groupe de 5 étudiants |
+| Outils | Veille documentaire — aucun développement logiciel |
+| Année | 2025–2026 |
+
+---
+
+## Compétences mobilisées
+
+- Veille technologique et scientifique sur des sujets à évolution rapide
+- Lecture et synthèse critique de ressources académiques et industrielles
+- Culture en intelligence artificielle générative et cybersécurité
+- Vulgarisation de concepts techniques complexes
+- Analyse d'impact sociétal et éthique
+- Communication orale et travail collaboratif
+
+---
+
+## Mots-clés
+
+`Deepfake` `GAN` `IA générative` `Cybersécurité` `Dual-Use` `Médias` `Éthique` `Veille` `PHR` `Recherche`
